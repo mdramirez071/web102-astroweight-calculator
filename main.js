@@ -39,8 +39,8 @@ select.insertBefore(option,select.lastChild);
 function calculateWeight(weight, planetName) {
   var userWeight = document.getElementById("user-weight").value;
   var planetName = document.getElementById("planets").selectedIndex-1;
-  var gravity = planets[planetName][1];
-  return userWeight * gravity;
+  var planet_gravity = planets[planetName][1];
+  return userWeight * planet_gravity;
 
 };
 // function calculateWeight(weight, planetName) {
